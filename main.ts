@@ -6,22 +6,22 @@ function interact(interval: number) {
     basic.clearScreen()
     i = 1
     while (i < interval + 1) {
-        basic.showString("" + ("" + fibo(i)))
+        basic.showString("" + ("" + factorial(i)))
         basic.pause(100)
         basic.clearScreen()
         i += 1
     }
 }
 
-function fibo(n: number): number {
-    if (n == 1) {
-        return 1
-    } else if (n == 2) {
-        return 1
-    } else {
-        return fibo(n - 1) + fibo(n - 2)
+function factorial(n: number): number {
+    let resultado: number;
+    if (n == 0 || n == 1) {
+        resultado = 1
+    } else if (n > 1) {
+        resultado = n * factorial(n - 1)
     }
     
+    return resultado
 }
 
 function numElements() {
@@ -40,7 +40,7 @@ function numElements() {
         basic.pause(50)
     }
     basic.clearScreen()
-    basic.showString("Fibo")
+    basic.showString("Factorial")
     interact(atimes)
 }
 
@@ -54,7 +54,7 @@ function showIcon() {
         basic.pause(100)
     }
     basic.clearScreen()
-    basic.showString("Fibo")
+    basic.showString("Factorial")
     basic.clearScreen()
 }
 
@@ -64,7 +64,7 @@ basic.forever(function on_forever() {
     atimes = 0
     bclicked = 0
     showIcon()
-    basic.showString("A to input B to fibo")
+    basic.showString("A to input B to factorial")
     numElements()
     basic.pause(500)
 })
