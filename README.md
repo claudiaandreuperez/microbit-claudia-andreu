@@ -3,7 +3,7 @@
 
 ## En que consiste el programa
 
-> El usuario introduce un número, y el programa calcula el factorial de ese.
+> El usuario introduce un número, y el programa calcula el factorial de todos los números hasta el número indicado.
 
 ## Usar como extensión
 
