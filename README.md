@@ -1,5 +1,8 @@
 
 > Abra esta pagina en [https://claudiaandreuperez.github.io/microbit-claudia-andreu/](https://claudiaandreuperez.github.io/microbit-claudia-andreu/)
+##En que consiste el programa
+
+> El usuario introduce un número, y el programa calcula el factorial de ese.
 
 ## Usar como extensión
 
