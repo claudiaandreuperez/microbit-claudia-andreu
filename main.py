@@ -10,12 +10,14 @@ def interact(interval: number):
         basic.pause(100)
         basic.clear_screen()
         i += 1
+
 def factorial(n: number):
     if n == 0 or n == 1:
-            resultado = 1
+        return 1
     elif n > 1:
-            resultado = n * factorial(n - 1)
-    return resultado
+        return n * factorial(n - 1)
+    else:
+        return 0
 
 def numElements():
     global atimes, bclicked

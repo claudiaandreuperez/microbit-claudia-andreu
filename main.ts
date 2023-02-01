@@ -14,14 +14,14 @@ function interact(interval: number) {
 }
 
 function factorial(n: number): number {
-    let resultado: number;
     if (n == 0 || n == 1) {
-        resultado = 1
+        return 1
     } else if (n > 1) {
-        resultado = n * factorial(n - 1)
+        return n * factorial(n - 1)
+    } else {
+        return 0
     }
     
-    return resultado
 }
 
 function numElements() {
